@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    private let index: Int
+    
     var titleLabel: UILabel!
     var heightLabel: UILabel!
     var heightTextField: UITextField!
@@ -19,10 +21,12 @@ class ViewController: UIViewController {
     var messageLabel: UILabel!
     var calculateBMIButton: UIButton!
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
+    init?(index: Int ,coder: NSCoder) {
+        self.index = index
+        super.init(coder: coder)
     }
     
+    @available(*, unavailable, renamed: "init(index:coder:)")
     required init?(coder: NSCoder) {
         fatalError("Use `init()` to initialize a ViewController instance.")
     }
