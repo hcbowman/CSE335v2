@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4kK-w7-WWs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="boA-Ia-uP7">
+            <objects>
+                <viewController id="S0E-1z-Kha" customClass="SignUpViewController" customModule="CSE335Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gYu-O3-boI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="backround" translatesAutoresizingMaskIntoConstraints="NO" id="VXe-yT-zec">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yKH-Ci-aIE">
+                                <rect key="frame" x="60" y="246" width="294" height="404"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOh-Hj-CzR" userLabel="signInButtonApple">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="94"/>
+                                        <state key="normal" image="signInButtonApple"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8g-Ha-gbx" userLabel="signInButtonFacebook">
+                                        <rect key="frame" x="0.0" y="94" width="294" height="94"/>
+                                        <state key="normal" image="signInButtonFacebook"/>
+                                        <connections>
+                                            <action selector="signInFB:" destination="S0E-1z-Kha" eventType="touchUpInside" id="LNv-jH-Opq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0X4-2W-XjB" userLabel="signInButtonGoogle">
+                                        <rect key="frame" x="0.0" y="188" width="294" height="94"/>
+                                        <state key="normal" image="signInButtonGoogle"/>
+                                        <connections>
+                                            <action selector="signInGoogle:" destination="S0E-1z-Kha" eventType="touchUpInside" id="Of9-m8-Asj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK1-cE-Mfp" userLabel="createAccountButton">
+                                        <rect key="frame" x="0.0" y="282" width="294" height="94"/>
+                                        <state key="normal" image="createAccountButton"/>
+                                        <connections>
+                                            <action selector="createAccount:" destination="S0E-1z-Kha" eventType="touchUpInside" id="0nV-vS-o7I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgW-Nd-VR2" userLabel="justSignInButton">
+                                        <rect key="frame" x="63" y="376" width="168" height="28"/>
+                                        <state key="normal" image="Just Sign In......"/>
+                                        <connections>
+                                            <action selector="signIn:" destination="S0E-1z-Kha" eventType="touchUpInside" id="Wg1-ZV-lhQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yKH-Ci-aIE" secondAttribute="height" multiplier="147:202" id="yT8-ha-7KP"/>
+                                </constraints>
+                            </stackView>
+                            <visualEffectView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-wc-uA3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="L3K-HO-4DD">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-oJ-li8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1W3-cM-5fW">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="regular"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lYc-Ue-G7i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VXe-yT-zec" firstAttribute="centerX" secondItem="gYu-O3-boI" secondAttribute="centerX" id="5JT-Xf-rEY"/>
+                            <constraint firstItem="yKH-Ci-aIE" firstAttribute="centerX" secondItem="gYu-O3-boI" secondAttribute="centerX" id="Ndz-Pa-tRz"/>
+                            <constraint firstItem="yKH-Ci-aIE" firstAttribute="centerY" secondItem="gYu-O3-boI" secondAttribute="centerY" id="XUe-up-dMV"/>
+                            <constraint firstItem="VXe-yT-zec" firstAttribute="trailing" secondItem="lYc-Ue-G7i" secondAttribute="trailing" id="taG-O6-euR"/>
+                            <constraint firstItem="VXe-yT-zec" firstAttribute="leading" secondItem="lYc-Ue-G7i" secondAttribute="leading" id="w8J-B9-USm"/>
+                            <constraint firstItem="VXe-yT-zec" firstAttribute="centerY" secondItem="gYu-O3-boI" secondAttribute="centerY" id="wPn-Pg-Kvx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ax4-7T-T2D"/>
+                    <connections>
+                        <outlet property="visualEffectView" destination="fhL-wc-uA3" id="P6C-Q2-bS2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3d-hj-wQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676.81159420289862" y="1273.6607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nUE-ZK-Ao1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4kK-w7-WWs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hiB-TC-Fae">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S0E-1z-Kha" kind="relationship" relationship="rootViewController" id="JJ4-uA-Ngt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZj-b1-XFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233.33333333333334" y="1273.6607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Just Sign In......" width="168" height="28"/>
+        <image name="backround" width="414" height="896"/>
+        <image name="createAccountButton" width="294" height="94"/>
+        <image name="signInButtonApple" width="294" height="94"/>
+        <image name="signInButtonFacebook" width="294" height="94"/>
+        <image name="signInButtonGoogle" width="294" height="94"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
