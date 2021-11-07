@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55AB09BD240898270016EE05"
-               BuildableName = "lab6.app"
-               BlueprintName = "lab6"
-               ReferencedContainer = "container:lab6.xcodeproj">
+               BlueprintIdentifier = "554E97B024C8D97200E065F7"
+               BuildableName = "Lab6v2.app"
+               BlueprintName = "Lab6v2"
+               ReferencedContainer = "container:Lab6v2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "554E97C924C8D97400E065F7"
+               BuildableName = "Lab6v2Tests.xctest"
+               BlueprintName = "Lab6v2Tests"
+               ReferencedContainer = "container:Lab6v2.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "554E97D424C8D97400E065F7"
+               BuildableName = "Lab6v2UITests.xctest"
+               BlueprintName = "Lab6v2UITests"
+               ReferencedContainer = "container:Lab6v2.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -44,10 +64,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55AB09BD240898270016EE05"
-            BuildableName = "lab6.app"
-            BlueprintName = "lab6"
-            ReferencedContainer = "container:lab6.xcodeproj">
+            BlueprintIdentifier = "554E97B024C8D97200E065F7"
+            BuildableName = "Lab6v2.app"
+            BlueprintName = "Lab6v2"
+            ReferencedContainer = "container:Lab6v2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +81,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "55AB09BD240898270016EE05"
-            BuildableName = "lab6.app"
-            BlueprintName = "lab6"
-            ReferencedContainer = "container:lab6.xcodeproj">
+            BlueprintIdentifier = "554E97B024C8D97200E065F7"
+            BuildableName = "Lab6v2.app"
+            BlueprintName = "Lab6v2"
+            ReferencedContainer = "container:Lab6v2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
